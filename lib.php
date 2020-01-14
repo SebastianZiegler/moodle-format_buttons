@@ -91,7 +91,7 @@ class format_buttons extends format_topics {
                 'type' => PARAM_TEXT,
             );
 
-            for ($i = 1; $i <= 12; $i++) {
+            for ($i = 1; $i <= 30; $i++) {
                 $divisortext = get_config('format_buttons', 'divisortext'.$i);
                 if (!$divisortext) {
                     $divisortext = '';
@@ -235,7 +235,7 @@ class format_buttons extends format_topics {
                 ),
             );
 
-            for ($i = 1; $i <= 12; $i++) {
+            for ($i = 1; $i <= 30; $i++) {
                 $courseformatoptionsedit['divisortext'.$i] = array(
                     'label' => get_string('divisortext', 'format_buttons', $i),
                     'help' => 'divisortext',
